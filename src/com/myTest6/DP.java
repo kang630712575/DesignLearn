@@ -10,3 +10,7 @@ package com.myTest6;
  */
 public class DP {
 }
+
+/**
+ * 合成/复用原则(Composite Reuse Principle)：原则是尽量使用合成/聚合的方式，而不是使用继承
+ */
