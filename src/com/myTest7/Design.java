@@ -1,4 +1,4 @@
-package com.myTest7;
+package DesignLearn.src.com.myTest7;
 
 /**
  * 设计模式：是程序员在面对同类软件工程设计问题所总结出来的有用的经验，设计模式不是代码，而是某类问题的通用解决方案，设计模式(design pattern)
@@ -25,7 +25,7 @@ public class Design {
  * 优缺点说明：
  * 1.优点：写法简单，在类加载的时候就完成实例化。避免了线程同步问题
  * 2.缺点：在类加载的时候就完成实例化，没有达到lazy loading的效果，如果从始至终从未使用过这个实例，就会造成内存的浪费。
- *        这种方式基于classloder机制避免了多线程的同步问题，不过，instance再类装载时就实例化，在单例模式中大多数是调用getInstance方法，
+ *        这种方式基于classloader机制避免了多线程的同步问题，不过，instance再类装载时就实例化，在单例模式中大多数是调用getInstance方法，
  *        但是，导致类装载的原因有很多种，因此不能确定有其他方式(或者其他的静态方法)导致类装载，这时候初始化instance就没有达到lazy loading
  *        的效果
  * 3.结论：这种方式可用，可能造成内存浪费
