@@ -24,7 +24,7 @@ interface Voltage5V{
 }
 
 
-
+// 类适配器
 class VoltageAdapter extends Voltage220V implements Voltage5V{
 
     @Override
